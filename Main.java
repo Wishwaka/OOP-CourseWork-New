@@ -4,5 +4,4 @@ public class Main {
         vendor1.setName("Wishwaka Livera");
         System.out.println(vendor1.getName());
     }
-
 }
