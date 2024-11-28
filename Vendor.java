@@ -1,10 +1,18 @@
-public class Vendor {
-    private String name;
+public class Vendor implements Runnable {
+    private int vendorId;
+    private int ticketsPerRelease;
+    private int releaseInterval;
 
-    public void setName(String name){
-        this.name = name;
+    public Vendor(){
     }
-    public String getName(){
-        return this.name;
+
+    public Vendor(int vendorId, int ticketsPerRelease, int releaseInterval){
+        this.vendorId = vendorId;
+        this.ticketsPerRelease = ticketsPerRelease;
+        this.releaseInterval = releaseInterval;
     }
+    @Override
+    public void run() {
+    }
+
 }
